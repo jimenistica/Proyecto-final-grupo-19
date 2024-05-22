@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="shortcut icon" href="./images/icons/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+
+</head>
+<body class="gradient-box">
+    <div class="circle"></div>
+    <div class="forma"></div>
+    <header>
+        <nav class="navbar" id="navbar">
+            <img src="./images/icons/logo2.png" alt="">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="./productos.html">Productos</a></li>
+                <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a href="./carrito.html">Carrito</a></li>
+                <li class="nav-item"><a href="./favoritos.html">Favoritos</a></li>
+            </ul>
+        </nav>
+        <div class="barra-busqueda" >
+            <div class="botones">
+                <div class="fav boton-blanco">
+                     <img  src="./images/icons/fav.png" alt="">
+                </div>
+                <div class=" fav boton-blanco">
+                    <img  src="./images/icons/fav.png" alt="">
+                </div>
+            </div>
+            <div class="menu" id="menu">☰</div>
+        </div>
+    </header>  
+    <div class="gallery">
+        <div class="main-image">
+            <img src="./images/photos/mate.webp" alt="Main Image" id="current-image">
+        </div>
+        <div class="thumbnails">
+            <img src="./images/photos/mate.webp" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('./images/photos/mate.webp')">
+            <img src="./images/photos/mate-verde.png" alt="Thumbnail 2" class="thumbnail" onclick="changeImage('/images/photos/mate-verde.png')">
+            <img src="./images/photos/mate-stanley-rojo.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage('/images/photos/mate-stanley-rojo.jpg')">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Product name</h1>
+        <h2>$5000</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorem nesciunt mollitia voluptate, iure doloremque eos praesentium vel aperiam, modi voluptatem amet recusandae quidem molestias incidunt itaque dignissimos magni saepe?</p>
+        <div class="contenedor-compra">
+            <form action="/submit" method="post">
+                <label for="cantidad"></label>
+                <div class="contenedor-cantidad">
+                    <div class="input-buttons">
+                        <button type="button" id="decrease" onclick="changeValue(-1)">-</button>
+                        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10" step="1">
+                        <button type="button" id="increase" onclick="changeValue(1)">+</button>
+                    </div>
+                </div>
+            </form>
+            <button class="btn boton-carrito"> Agregar al carrito</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <ul class="footer-list">
+            <li class="footer-item"><a href="./index.html"><img src="./images/icons/home.png" alt=""></a></li>
+            <li class="footer-item"><a href="#"><img src="./images/icons/fav.png" alt=""></a></li>
+            <li class="footer-item"><a href="#"><img src="./images/icons/shop.png" alt=""></a></li>
+        </ul>
+        <ul class="footer-list">
+            <li class="footer-item"><a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img src="./images/icons/ig.png" alt=""></a></li>
+            <li class="footer-item"><a href="https://www.facebook.com/MelodiaSimpleStore" target="_blank"><img src="./images/icons/fb.png" alt=""></a></li>
+            <li class="footer-item"><a href="https://wa.me/+5492634762323?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20productos" target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
