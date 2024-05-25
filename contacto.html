@@ -16,7 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script defer src="script.js"></script>
 </head>
 
 <body class="gradient-box">
@@ -42,30 +41,40 @@
         <div class="main-container container-max">
             <section class="cuestionario">
                 <h2>¿Tenés alguna pregunta?</h2>
-                <form action="">
+                <form action="#" id="formRegister" method="GET" novalidate>
                     <div>
                         <label for="name"></label>
                         <input type="text" id="name" name="name" placeholder="Tu nombre" required>
                         <label for="apellido"></label>
                         <input type="text" name="apellido" id="apellido" placeholder="Tu apellido" required>
                     </div>
+                    <div class="error-div">
+                        <div class="error" id="error-name"></div>
+                        <div class="error" id="error-apellido"></div>
+                    </div>
+
                     <div>
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Tu mail" required>
                         <label for="tel"></label>
                         <input type="tel" name="tel" id="tel" placeholder="Tu teléfono">
                     </div>
+                    <div class="error-div">
+                        <div class="error" id="error-email"></div>
+                        <div class="error" id="error-tel"></div>
+                    </div> <br>
                     <label for="motivo">Motivo</label>
                     <select name="motivo" id="motivo">
                         <option value="1">Disponibilidad</option>
                         <option value="2">Compras mayoristas</option>
                         <option value="3">Sugerencias</option>
                         <option value="4">Otro</option>
-                    </select> <br>
+                    </select><br>
     
                     <label for="mensaje"></label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje"
-                        required></textarea><br><br>
+                        required></textarea>
+                        <div class="error error-div" id="error-mensaje"></div> <br>
                     <button class="btn btn-enviar" type="submit"> Enviar</button>
                 </form>
             </section>
@@ -110,8 +119,8 @@
     <footer class="footer">
         <ul class="footer-list">
             <li class="footer-item"><a href="./index.html"><img src="./images/icons/home.png" alt=""></a></li>
-            <li class="footer-item"><a href="#"><img src="./images/icons/fav.png" alt=""></a></li>
-            <li class="footer-item"><a href="#"><img src="./images/icons/shop.png" alt=""></a></li>
+            <li class="footer-item"><a href="./favoritos.html"><img src="./images/icons/fav.png" alt=""></a></li>
+            <li class="footer-item"><a href="./carrito.html"><img src="./images/icons/shop.png" alt=""></a></li>
         </ul>
         <ul class="footer-list">
             <li class="footer-item"><a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img
@@ -123,6 +132,8 @@
                     target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a></li>
         </ul>
     </footer>
+    <script defer src="script.js"></script>
+
 </body>
 
 </html>

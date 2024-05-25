@@ -381,7 +381,7 @@ h2, h3{
     align-items: center;
     width: 100%;
     white-space: nowrap;
-    margin: 20px auto;
+    margin: clamp(5px, 2vw, 10px) auto;
     padding: 10px;
     overflow: hidden;
 }
@@ -424,8 +424,8 @@ h2, h3{
 }
 
 .product-section h4{
-    margin-top: 10px;
-    font-size: clamp(20px,4vw,40px);
+    margin-top: clamp(2px, 1vw, 10px);
+    font-size: clamp(22px,4vw,40px);
 }
 .product-section h5{
     margin-left: 2vw;
@@ -438,7 +438,7 @@ h2, h3{
 
 .scroll-item {
     font-family: 'Roboto', sans-serif;
-    font-size: clamp(10px,2vw,30px);
+    font-size: clamp(12px,2vw,30px);
     display: inline-block; 
     margin-right: 3vw;
     background-color: white;
@@ -450,6 +450,7 @@ h2, h3{
 
 .scroll-card{
     font-family: 'Roboto', sans-serif;
+   
     display: inline-flex; 
     flex-direction: column;
     justify-content: space-evenly;
@@ -468,7 +469,7 @@ h2, h3{
     margin: 0.7vh auto; 
 }
 .scroll-container .scroll-card img{
-    height: clamp(8px,15vw,190px);
+    height: clamp(80px,15vw,190px);
 
 }
 
@@ -509,7 +510,7 @@ h2, h3{
     margin: 1vw;
 }
 .card img{
-    height: clamp(8px,15vw,190px);
+    height: clamp(60px,15vw,190px);
 }
 
 /* ----------------PÁGINA PRODUCTO-------------- */
@@ -687,7 +688,7 @@ input[type=number]::-webkit-inner-spin-button {
 .cuestionario div{
     display: flex;
     justify-content: space-between;
-    margin: clamp(8px, 5vw, 30px) 0;
+    margin-top: clamp(8px, 2vw, 10px);
     font-family: 'Roboto', sans-serif;
 
 }
@@ -724,7 +725,7 @@ form select{
     border: none;
     border-radius: 5px;
     background-color:  rgba(255, 255, 255, 0.7);
-    margin: clamp(8px, 4vw, 25px) 0;
+   
 }
 .btn-enviar{
     padding: clamp(10px, 2vw, 24px);
@@ -772,6 +773,16 @@ form select{
     width: 30vw;
     max-height: 250px;
 }
+.error-div{
+    margin: 0 !important;
+
+}
+.error{
+    color: #FF5500;
+    font-size: clamp(8px, 2vw, 20px);
+    margin: 2px !important;
+}
+
 @media (min-width: 768px){
     .cuestionario{
         margin: 2vw;
@@ -865,10 +876,10 @@ form select{
 
 /*-----------FAVORITOS---------*/
 .favoritos{
-    width: 90%;
+    width: 95%;
 }
 .favoritos h4{
-    font-size: clamp(12px, 2.5vw, 34px);;
+    font-size: clamp(22px, 2.5vw, 34px);;
 }
 /* ----------FOOTER---------- */
 .footer {
