@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
+
 <body class="gradient-box">
     <div class="circle"></div>
     <div class="forma"></div>
@@ -28,7 +33,7 @@
                 <li class="nav-item"><a href="./favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
-        <div class="barra-busqueda" >
+        <div class="barra-busqueda">
             <input type="search" placeholder="Search products">
             <div class="menu" id="menu">☰</div>
         </div>
@@ -46,128 +51,134 @@
             <img class="tablet" src="./images/photos/tablet.webp" alt="">
             <img class="termo" src="./images/photos/termo.webp" alt="">
             <img class="mate" src="./images/photos/mate.webp" alt="">
-            <!-- <img class="nintendo" src="./images/photos/nintendo.png" alt="">
-            <img class="air" src="./images/photos/inalambricos.webp" alt="">
-            <img class="chrome" src="./images/photos/chromecast.webp" alt=""> -->
         </div>
     </div>
     <div class="scroll-container">
-        <div class="scroll-item">Hogar</div>
-        <div class="scroll-item">Bazar</div>
-        <div class="scroll-item">Termos y vasos</div>
-        <div class="scroll-item">Blanquería</div>
-        <div class="scroll-item">Mini-electro</div>
-        <div class="scroll-item">Novedades</div>
+        <button class="scroll-button left" onclick="scrollLeftContent()">&#9664;</button>
+        <div class="scroll-content">
+            <div class="scroll-item">Hogar</div>
+            <div class="scroll-item">Bazar</div>
+            <div class="scroll-item">Termos y vasos</div>
+            <div class="scroll-item">Blanquería</div>
+            <div class="scroll-item">Mini-electro</div>
+            <div class="scroll-item">Novedades</div>
+        </div>
+        <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
     </div>
     <section class="product-section">
-    <h4>Hot sale</h4>
-    <div class="scroll-container">
-        <article class="scroll-card">
-            <button class="btn btn-second">ENVÍO GRATIS</button>
-            <a href="./producto.html"><img src="./images/photos/botella.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="scroll-card">
-            <button class="btn btn-second">ENVÍO GRATIS</button>
-            <a href="./producto.html"><img src="./images/photos/set-mate.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="scroll-card">
-            <button class="btn btn-second">ENVÍO GRATIS</button>
-            <a href="./producto.html"><img src="./images/photos/termo.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="scroll-card">
-            <button class="btn btn-second">ENVÍO GRATIS</button>
-            <a href="./producto.html"><img src="./images/photos/set-matero.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="scroll-card">
-            <button class="btn btn-second">ENVÍO GRATIS</button>
-            <a href="./producto.html"><img src="./images/photos/Termo-sin-manija.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-    </div>
-    <h4>Products</h4>
-    <div class="card-container">
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/especiero.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/acolchado2.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/mini-impresora.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/molderia.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/picadora.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/rizador2.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/organizador.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/planchita.webp" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-        <article class="card">
-            <button class="fav"> 
-                <img  src="./images/icons/fav.png" alt="">
-            </button>
-            <a href="./producto.html"><img src="./images/photos/rizador1.png" alt=""></a>
-            <h6>Product name</h6>
-            <h5>Product price</h5>
-        </article>
-    </div>
+        <h4>Hot sale</h4>
+        <div class="scroll-container">
+            <button class="scroll-button left" onclick="scrollLeftContent2()">&#9664;</button>
+            <div class="scroll-content2">
+                <article class="scroll-card">
+                    <button class="btn btn-second">ENVÍO GRATIS</button>
+                    <a href="./producto.html"><img src="./images/photos/botella.webp" alt=""></a>
+                    <h6>Product name</h6>
+                    <h5>Product price</h5>
+                </article>
+                <article class="scroll-card">
+                    <button class="btn btn-second">ENVÍO GRATIS</button>
+                    <a href="./producto.html"><img src="./images/photos/set-mate.webp" alt=""></a>
+                    <h6>Product name</h6>
+                    <h5>Product price</h5>
+                </article>
+                <article class="scroll-card">
+                    <button class="btn btn-second">ENVÍO GRATIS</button>
+                    <a href="./producto.html"><img src="./images/photos/termo.webp" alt=""></a>
+                    <h6>Product name</h6>
+                    <h5>Product price</h5>
+                </article>
+                <article class="scroll-card">
+                    <button class="btn btn-second">ENVÍO GRATIS</button>
+                    <a href="./producto.html"><img src="./images/photos/set-matero.webp" alt=""></a>
+                    <h6>Product name</h6>
+                    <h5>Product price</h5>
+                </article>
+                <article class="scroll-card">
+                    <button class="btn btn-second">ENVÍO GRATIS</button>
+                    <a href="./producto.html"><img src="./images/photos/Termo-sin-manija.webp" alt=""></a>
+                    <h6>Product name</h6>
+                    <h5>Product price</h5>
+                </article>
+            </div>
+            <button class="scroll-button right" onclick="scrollRight2()">&#9654;</button>
+
+        </div>
+        <h4>Products</h4>
+        <div class="card-container">
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/especiero.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/acolchado2.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/mini-impresora.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/molderia.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/picadora.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/rizador2.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/organizador.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/planchita.webp" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+            <article class="card">
+                <button class="fav">
+                    <img src="./images/icons/fav.png" alt="">
+                </button>
+                <a href="./producto.html"><img src="./images/photos/rizador1.png" alt=""></a>
+                <h6>Product name</h6>
+                <h5>Product price</h5>
+            </article>
+        </div>
     </section>
     <footer class="footer">
         <ul class="footer-list">
@@ -176,10 +187,15 @@
             <li class="footer-item"><a href="#"><img src="./images/icons/shop.png" alt=""></a></li>
         </ul>
         <ul class="footer-list">
-            <li class="footer-item"><a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img src="./images/icons/ig.png" alt=""></a></li>
-            <li class="footer-item"><a href="https://www.facebook.com/MelodiaSimpleStore" target="_blank"><img src="./images/icons/fb.png" alt=""></a></li>
-            <li class="footer-item"><a href="https://wa.me/+5492634762323?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20productos" target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a></li>
+            <li class="footer-item"><a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img
+                        src="./images/icons/ig.png" alt=""></a></li>
+            <li class="footer-item"><a href="https://www.facebook.com/MelodiaSimpleStore" target="_blank"><img
+                        src="./images/icons/fb.png" alt=""></a></li>
+            <li class="footer-item"><a
+                    href="https://wa.me/+5492634762323?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20productos"
+                    target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a></li>
         </ul>
     </footer>
 </body>
+
 </html>
