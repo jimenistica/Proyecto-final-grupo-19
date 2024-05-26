@@ -72,9 +72,9 @@
                         <label for="cantidad"></label>
                         <div class="contenedor-cantidad">
                             <div class="input-buttons">
-                                <button type="button" id="decrease" onclick="changeValue(-1)">-</button>
+                                <button type="button" id="decrease" onclick="changeValue(-1, this)">-</button>
                                 <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10" step="1">
-                                <button type="button" id="increase" onclick="changeValue(1)">+</button>
+                                <button type="button" id="increase" onclick="changeValue(1, this)">+</button>
                             </div>
                         </div>
                     </form>

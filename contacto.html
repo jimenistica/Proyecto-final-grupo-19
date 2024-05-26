@@ -52,7 +52,6 @@
                         <div class="error" id="error-name"></div>
                         <div class="error" id="error-apellido"></div>
                     </div>
-
                     <div>
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Tu mail" required>
@@ -70,50 +69,56 @@
                         <option value="3">Sugerencias</option>
                         <option value="4">Otro</option>
                     </select><br>
-    
+
                     <label for="mensaje"></label><br>
                     <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe aquí tu mensaje"
                         required></textarea>
-                        <div class="error error-div" id="error-mensaje"></div> <br>
-                    <button class="btn btn-enviar" type="submit"> Enviar</button>
+                    <div class="error error-div" id="error-mensaje"></div>
+                    <div class="terms">
+                        <input type="checkbox" id="accept-terms" name="accept-terms" value="accepted" onclick="toggleSubmitButton()">
+                        <label for="accept-terms">Acepto los términos y condiciones</label>
+                    </div>
+                    <input class="btn btn-enviar" type="submit" id="submit-button" value="Enviar" disabled> </input>
                 </form>
             </section>
             <section class="info-contacto">
                 <div class="container-info">
                     <h2>Contactate con nosotros</h2>
-                <div class="info-item">
                     <div class="info-item">
-                        <a
-                        href="https://wa.me/+5492634762323?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20productos"
-                        target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a>
-                        <h3>Teléfono:</h3>
+                        <div class="info-item">
+                            <a href="https://wa.me/+5492634762323?text=Hola%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20tus%20productos"
+                                target="_blank"><img src="./images/icons/whatsapp.png" alt=""></a>
+                            <h3>Teléfono:</h3>
+                        </div>
+                        <h4>263466666</h4>
                     </div>
-                    <h4>263466666</h4>
-                </div>
-                <div class="info-item">
                     <div class="info-item">
-                        <a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img
-                            src="./images/icons/ig.png" alt=""></a>
-                        <h3>Instagram:</h3>
+                        <div class="info-item">
+                            <a href="https://www.instagram.com/melodiasimplestore/" target="_blank"><img
+                                    src="./images/icons/ig.png" alt=""></a>
+                            <h3>Instagram:</h3>
+                        </div>
+                        <h4>melodiasimplestore</h4>
                     </div>
-                    <h4>melodiasimplestore</h4>
-                </div>
-                <div class="info-item">
                     <div class="info-item">
-                        <a href="https://www.facebook.com/MelodiaSimpleStore" target="_blank"><img
-                            src="./images/icons/fb.png" alt=""></a>
-                        <h3>Facebook:</h3>
+                        <div class="info-item">
+                            <a href="https://www.facebook.com/MelodiaSimpleStore" target="_blank"><img
+                                    src="./images/icons/fb.png" alt=""></a>
+                            <h3>Facebook:</h3>
+                        </div>
+                        <h4>Melodía Simple</h4>
                     </div>
-                    <h4>Melodía Simple</h4>
-                </div>
                 </div>
                 <div class="container-ubicacion">
                     <h2>Nuestra ubicación</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13355.105395106504!2d-68.47445444486314!3d-33.19373768173891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e5c222ae7223b%3A0xd575844291c7113c!2sPresb%C3%ADtero%20Olguin%20%26%20Alejandro%20Aguado%2C%20Rivadavia%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1716593717794!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13355.105395106504!2d-68.47445444486314!3d-33.19373768173891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e5c222ae7223b%3A0xd575844291c7113c!2sPresb%C3%ADtero%20Olguin%20%26%20Alejandro%20Aguado%2C%20Rivadavia%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1716593717794!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            
-    
+
+
         </div>
     </div>
     <footer class="footer">
